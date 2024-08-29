@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner-home">
+        <img src="images/banner00.jpg" alt="Banner">
+        <div class="banner-texts">
+            <h1>Bienvenido a la Calculadora de Edad</h1>
+        </div>
+    </div>
+    <div id="contenedorPrincipal">
+        <div id="tarjetasLateralesIzquierda" class="tarjetas-laterales">
+            <div class="tarjeta" id="edadExacta" style="display: none;">
+                <h3>Edad exacta</h3>
+                <p id="edadExactaTexto"></p>
+            </div>
+            <div class="tarjeta" id="cumpleanos" style="display: none;">
+                <h3>Cumpleaños</h3>
+                <p id="cumpleanosTexto"></p>
+            </div>
+            <div class="tarjeta" id="diasVividos" style="display: none;">
+                <h3>Días vividos</h3>
+                <p id="diasVividosTexto"></p>
+            </div>
+        </div>
+        <form id="formularioEdad">
+            <h2>Calculadora de Edad</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="dia">Día de nacimiento:</label>
+            <select id="dia" name="dia" required></select>
+
+            <label for="mes">Mes de nacimiento:</label>
+            <select id="mes" name="mes" required>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            <label for="ano">Año de nacimiento:</label>
+            <select id="ano" name="ano" required></select>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="tarjetasLateralesDerecha" class="tarjetas-laterales">
+            <div class="tarjeta" id="horasVividas" style="display: none;">
+                <h3>Horas vividas</h3>
+                <p id="horasVividasTexto"></p>
+            </div>
+            <div class="tarjeta" id="diaSemana" style="display: none;">
+                <h3>Día de la semana</h3>
+                <p id="diaSemanaTexto"></p>
+            </div>
+            <div class="tarjeta" id="signoZodiaco" style="display: none;">
+                <h3>Signo Zodiaco</h3>
+                <p id="signoZodiacoTexto"></p>
+            </div>
+        </div>
+    </div>
+
+    <ul id="listaPersonas"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
